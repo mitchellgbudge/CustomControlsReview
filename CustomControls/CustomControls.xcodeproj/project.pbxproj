@@ -12,6 +12,7 @@
 		3D12B3F5232B0A7C0012BADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D12B3F4232B0A7C0012BADB /* Assets.xcassets */; };
 		3D12B3F8232B0A7C0012BADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D12B3F6232B0A7C0012BADB /* LaunchScreen.storyboard */; };
 		3D12B402232B0AD40012BADB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12B401232B0AD40012BADB /* LoginViewController.swift */; };
+		3D12B405232B164B0012BADB /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12B404232B164A0012BADB /* SignupPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3D12B3F7232B0A7C0012BADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D12B3F9232B0A7C0012BADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D12B401232B0AD40012BADB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3D12B404232B164A0012BADB /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupPage.swift; path = ../SignupPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		3D12B3EC232B0A7B0012BADB /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				3D12B406232B182A0012BADB /* New Group */,
 				3D12B403232B0AD90012BADB /* View Controllers */,
 				3D12B3FF232B0AB30012BADB /* Storyboards */,
 				3D12B400232B0ABE0012BADB /* Resources */,
@@ -86,6 +89,14 @@
 				3D12B401232B0AD40012BADB /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3D12B406232B182A0012BADB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3D12B404232B164A0012BADB /* SignupPage.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				3D12B402232B0AD40012BADB /* LoginViewController.swift in Sources */,
 				3D12B3EE232B0A7B0012BADB /* AppDelegate.swift in Sources */,
+				3D12B405232B164B0012BADB /* SignupPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
