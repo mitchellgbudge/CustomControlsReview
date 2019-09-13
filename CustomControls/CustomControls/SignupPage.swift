@@ -16,6 +16,10 @@ class SignupPage: UIControl {
     let emailLabel: UILabel = UILabel()
     let emailContainerView: UIView = UIView()
     let emailTextField: UITextField = UITextField()
+    let passwordLabel: UILabel = UILabel()
+    let passwordContainerView: UIView = UIView()
+    let passwordTextField: UITextField = UITextField()
+    let loginButton: UIButton = UIButton()
     
     // MARK: - Required Initializers
     
@@ -64,7 +68,46 @@ class SignupPage: UIControl {
         emailTextField.trailingAnchor.constraint(equalTo: emailContainerView.trailingAnchor, constant: -8).isActive = true
         emailTextField.bottomAnchor.constraint(equalTo: emailContainerView.bottomAnchor, constant: -8).isActive = true
         emailTextField.placeholder = "Email"
-    
+        
+        // Password label
+        addSubview(passwordLabel)
+        passwordLabel.translatesAutoresizingMaskIntoConstraints = false
+        passwordLabel.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor).isActive = true
+        passwordLabel.topAnchor.constraint(equalToSystemSpacingBelow: emailContainerView.bottomAnchor, multiplier: 1).isActive = true
+        passwordLabel.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor).isActive = true
+        passwordLabel.text = "Enter password here:"
+        passwordLabel.font = UIFont.systemFont(ofSize: 18, weight: .light)
+        
+        // Password container view
+        addSubview(passwordContainerView)
+        passwordContainerView.translatesAutoresizingMaskIntoConstraints = false
+        passwordContainerView.leadingAnchor.constraint(equalTo: emailLabel.leadingAnchor).isActive = true
+        passwordContainerView.topAnchor.constraint(equalToSystemSpacingBelow: passwordLabel.bottomAnchor, multiplier: 1.0).isActive = true
+        passwordContainerView.trailingAnchor.constraint(equalTo: emailLabel.trailingAnchor).isActive = true
+        passwordContainerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        passwordContainerView.layer.borderColor = UIColor.black.cgColor
+        passwordContainerView.layer.borderWidth = 2
+        passwordContainerView.layer.cornerRadius = 5
+        
+        // Password text field
+        passwordContainerView.addSubview(passwordTextField)
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.leadingAnchor.constraint(equalTo: emailContainerView.leadingAnchor, constant: 8).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: passwordContainerView.topAnchor, constant: 8).isActive = true
+        passwordTextField.trailingAnchor.constraint(equalTo: emailContainerView.trailingAnchor, constant: -8).isActive = true
+        passwordTextField.bottomAnchor.constraint(equalTo: passwordContainerView.bottomAnchor, constant: -8).isActive = true
+        passwordTextField.placeholder = "Password"
+        
+        // Login button
+        addSubview(loginButton)
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.topAnchor.constraint(equalToSystemSpacingBelow: passwordContainerView.bottomAnchor, multiplier: 1).isActive = true
+        loginButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        loginButton.setTitle(" Login ", for: .normal)
+        loginButton.setTitleColor(.black, for: .normal)
+        loginButton.layer.borderColor = UIColor.black.cgColor
+        loginButton.layer.borderWidth = 2
+        loginButton.layer.cornerRadius = 5
     }
     
 }
